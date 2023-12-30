@@ -1,19 +1,14 @@
 import React from "react";
-import TemperatureLineChart from "../../Chart/Chart";
-import Header from "../../Header/Header";
-import { Link } from "react-router-dom";
+//import TemperatureLineChart from "../../Chart/Chart";
+import Main from "../../Main";
+import Welcome from "../../Welcome/Welcome";
 
 const Home = () => {
-    return (
-        <main className="mainContainer">
-            <Header title="My Cycle" />
-            <div>
-                <h1>Courbe de Température</h1>
-                <TemperatureLineChart />
-            </div>
-            <Link to="/SignIn">Sign in Page</Link>
-        </main>
-    );
+  return (
+    <Main>
+      <Welcome />
+    </Main>
+  );
 };
 
 export default Home;
